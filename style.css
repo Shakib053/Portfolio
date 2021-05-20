@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Padauk', sans-serif;
+font-family: 'Pattaya', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    text-transform: uppercase;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    position: relative;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+.logo a{
+    color: aliceblue;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.menu li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.active, ul li:hover{
+    border-top: 2px solid #5dade2;
+    border-bottom: 2px solid #5dade2;
+}
+.contact_btn a{
+    background-color: #d465ef;
+    padding: 12px 26px;
+    font-weight: 500;
+    font-style: 14px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+}
+.contact_btn a:hover{
+background-color: #00DBDE;
+}
+.cn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.cn h1{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: aquamarine;
+    font-weight: 200;
+    font-size: 50px;
+}
+.cn h2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color:antiquewhite;
+    font-weight: 700;
+    font-size: 20px;
+}
+.cn h2:before{
+    content: "";
+    margin-top: 16px;
+    left: 0px;
+    position: absolute;
+    border: 2px solid white;
+    width: 80px;
+    height: auto;
+}
+header:before{
+    content: "";
+    height: 550px;
+    width: 450px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-image: url('images/gorila.jpg');
+    background-size: 100% 100%;
+    
+}
+.social{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+.fa_icons{
+    width: 40px;
+    height: 40px;
+    border-right: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+}
+.fa_icons:nth-child(even)
+{
+    margin: 20px 0;
+}
+.fa_icons:hover{
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    
+}
+.grid{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    overflow: hidden;
+}
